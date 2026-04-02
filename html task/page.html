@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd_Task</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <h1>HTML Form Example</h1>
+  <p>These an example of an <u>HTML5</u> form containing يحتوي various <mark>input</mark> controls.</p>  
+ <form action="/Home/Submit" method="post">
+  <fieldset>
+    <legend>User Information:</legend>
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" placeholder="John"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="john.doe@example.com"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information:</legend>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
+    <label for="message">Message:</label><br>
+    <textarea name="message" rows="10" cols="30" placeholder="Enter your message here..."></textarea>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Subscriptions:</legend>
+    <label for="newsletter1"> subscribe to newsletter1</label>
+    <input type="checkbox" id="newsletter1" name="newsletter1" value="subscribe to newsletter1"><br>
+    <label for="newsletter2"> subscribe to newsletter2</label>
+    <input type="checkbox" id="newsletter2" name="newsletter2" value="subscribe to newsletter2"><br>
+
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Preferred Language:</legend>
+   <label for="language">select your preferred Language:</label>
+  <select name="language" id="language">
+    <option value="Ar">Arabic</option>
+    <option value="en">English</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+  </select>
+  <br><br>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Feedback:</legend>
+    <label for="rating">Rate our service:</label>
+    <input type="range" id="rating" name="rating" min="0" max="10" value="5">
+    
+  
+
+  </fieldset>
+
+  <button  type="submit">Submit </button>
+  <button  type="reset">Reset</button>
+</form>
+
+
+    
+</body>
+</html>
